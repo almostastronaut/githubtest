@@ -13,12 +13,12 @@ FROM Emplyees as emp
 INNER JOIN Projects as pro
 ON pro.employee_id = emp.id
 -- WHERE pro.End_dt < CURDATE()
-GROUP BY emp.id
-HAVING count(pro.End_dt)>10
-
+GROUP BY emp.id   
+HAVING count(pro.End_dt)>15
+   
 ) a
 
-WHERE a.rn <= 5
+WHERE a.rn <= 51
 
 
 -- FROM-> JOIN-> WHERE-> GROUP BY-> AGG FUNCTION-> ORDER BY-> OTHER FUNCTION-> SELECT-> ORDER BY-> LIMIT
