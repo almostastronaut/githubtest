@@ -18,7 +18,7 @@ HAVING count(pro.End_dt)>15
    
 ) a
 
-WHERE a.rn <= 51
+WHERE a.rn <= 51111
 
 
 -- FROM-> JOIN-> WHERE-> GROUP BY-> AGG FUNCTION-> ORDER BY-> OTHER FUNCTION-> SELECT-> ORDER BY-> LIMIT
